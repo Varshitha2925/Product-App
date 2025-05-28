@@ -49,21 +49,3 @@
     flex: 1 1 auto;
 }
 
-// Add vibrant color to matBadge
-::ng-deep .mat-badge-content {
-    background: linear-gradient(135deg, #ff9800 60%, #ff3d00 100%);
-    color: #fff;
-    font-weight: 700;
-    font-size: 0.85rem;
-    box-shadow: 0 2px 8px rgba(255, 61, 0, 0.18);
-    border-radius: 50%;
-    border: 2px solid #fff;
-    min-width: 1.5em;
-    height: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 12px !important;
-    right: 12px !important;
-    transition: background 0.3s, box-shadow 0.3s;
-}
