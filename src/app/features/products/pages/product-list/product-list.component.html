@@ -1,0 +1,5 @@
+<div class="container">
+  <section class="grid" *ngIf="filtered$ | async as list">
+    <app-product-card *ngFor="let p of list" [product]="p" (selected)="nav($event)"></app-product-card>
+  </section>
+</div>

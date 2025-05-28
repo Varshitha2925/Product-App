@@ -1,0 +1,6 @@
+<div class="container" *ngIf="product$ | async as p">
+  <a routerLink="/products" mat-button>&larr; Back</a>
+  <h1>{{ p.name }}</h1>
+  <p>{{ p.description }}</p>
+  <p><strong>{{ p.price|currency }}</strong></p>
+</div>

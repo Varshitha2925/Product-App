@@ -1,0 +1,18 @@
+<mat-card class="prod-card" (click)="select()">
+  <div class="img-wrap">
+    <img mat-card-image [src]="product.imageUrl" [alt]="product.name">
+    <span class="badge cat">{{ product.category }}</span>
+    <span *ngIf="!product.inStock" class="badge stock">Out</span>
+  </div>
+  <mat-card-content>
+    <h3 class="title">{{ product.name }}</h3>
+    <p class="desc">{{ product.description }}</p>
+    <div class="meta"><mat-icon inline>star</mat-icon>{{ product.rating }}</div>
+    <div class="price-row">
+      <span class="price">{{ product.price | currency }}</span>
+      <button mat-raised-button color="primary" (click)="add($event)">
+        <mat-icon>shopping_cart</mat-icon>Add
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

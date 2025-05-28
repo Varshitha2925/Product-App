@@ -1,0 +1,92 @@
+.chips {
+    margin: 1.5rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    padding-bottom: 2rem;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 1.1rem;
+    box-shadow: 0 4px 24px rgba(42, 82, 152, 0.08);
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    &:hover {
+        box-shadow: 0 8px 32px rgba(42, 82, 152, 0.16);
+        transform: translateY(-4px) scale(1.02);
+    }
+}
+
+.product-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 0.8rem;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 12px rgba(140, 140, 255, 0.10);
+}
+
+.product-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #2d3142;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    padding: 0.3em 1em;
+    border-radius: 0.6em;
+    box-shadow: 0 1px 6px rgba(67, 206, 162, 0.10);
+    border: 1.5px solid #fff;
+    text-shadow: 0 1px 8px rgba(24, 90, 157, 0.10);
+    margin-bottom: 0.7rem;
+}
+
+.add-to-cart-btn {
+    margin-top: 0.7rem;
+    background: linear-gradient(90deg, #ff9800 0%, #ff3d00 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 2px 8px rgba(255, 61, 0, 0.10);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    &:hover {
+        background: linear-gradient(90deg, #ff3d00 0%, #ff9800 100%);
+        box-shadow: 0 4px 16px rgba(255, 61, 0, 0.15);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .product-image {
+        width: 120px;
+        height: 120px;
+    }
+    .product-card {
+        padding: 1rem 0.5rem;
+    }
+}
