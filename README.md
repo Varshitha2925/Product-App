@@ -13,8 +13,6 @@
 
 ## 🚀 Quick start
 
-> **Prerequisites**  
-> *Node 18 LTS +, npm 9 +*
 
 ```bash
 # 1. Clone
